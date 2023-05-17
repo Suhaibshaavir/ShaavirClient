@@ -1,13 +1,11 @@
 
-function Login({ loginClick }) {
+function Login() {
 
-    const loginHandler = (a=6) => {
-        loginClick(a)
-    }
+
 
     return (
         <>
-            <button className="btn btn-primary" onClick={loginHandler}>Login</button>
+            <button className="btn btn-primary">Login</button>
 
         </>
     )
