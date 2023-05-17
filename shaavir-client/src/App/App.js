@@ -1,10 +1,10 @@
+import Login from "./authentication/login"
 
-
-const App = ({}) => {
+const App = () => {
 
     return (
         <>
-
+        <Login></Login>
         </>
     )
 
