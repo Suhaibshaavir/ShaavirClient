@@ -1,0 +1,213 @@
+<head>
+    <!-- Meta Tags -->
+   <meta charset="UTF-8">
+   <meta name="author" content="Kamran Mubarik">
+   <meta name="content" content="KM Tutorial Online">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Title -->
+    <title>Job Application Form</title>
+    <!-- Style Sheet -->
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <!-- Javascript -->
+   <style>
+    :root{
+	--mainColor: #494949;
+	--secondayColor:  darkgray;
+	--white: #FFFFFF;
+}
+/* Import Font */
+@font-face{
+	font-family: Roboto;
+	src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+/* Global Settings */
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	background-color: #eee;
+}
+hr{
+	border: 1px solid rgba(236, 240, 241,0.3);
+}
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+/* Content Styling */
+main{
+	height: auto;
+	background-color: var(--white);
+	padding: 30px;
+	box-shadow: 0 0 2px #808080;
+	position: relative;
+	z-index: 100;
+}
+main h2{
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 15px;
+}
+/* Content Section === Checkout Page */
+main .application-form{
+	max-width: 600px;
+	padding: 10px;
+	margin: 0 auto;
+}
+/* Content main === Checkout Page === Checkout Items */
+main .application-form .application-form-detail{
+	width: 100%;
+}
+main .application-form .application-form-detail h4{
+	display: block;
+	color: var(--secondayColor);
+	background-color: var(--mainColor);
+	text-transform: uppercase;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+form .form-group{
+	margin: 10px 5px;
+	width: calc(100% - 10px);
+}
+form label{
+	color: var(--mainColor);
+	display: block;
+	margin-bottom: 6px;
+}
+form .form-group input,
+form .form-group select,
+form .form-group textarea{
+	width: 100%;
+	padding: 8px 5px;
+	border: 1px solid var(--secondayColor);
+	outline: none;
+}
+form input:focus,
+form select:focus,
+form textarea:focus{
+	outline: 1px solid var(--secondayColor);
+	border: 1xp solid transparent;
+}
+form .form-inline{
+	display: flex;
+	justify-content: space-between;
+}
+form .form-inline.flex{
+	display: flex;
+	justify-content: start;
+	margin-bottom: 10px;
+}
+form .form-inline.flex input{
+	width: unset;
+	margin-right: 10px;
+}
+form .form-inline .form-group{
+	width: 48%;
+}
+form button{
+	display: block;
+	padding: 6px 10px;
+	background-color: var(--mainColor);
+	color: var(--secondayColor);
+	border: none;
+	cursor: pointer;
+	transition: 0.3s ease-in;
+	margin-left: 5px;
+}
+form button:hover{
+	color: var(--white);
+}
+   </style>
+</head>
+<body>
+
+<div class="container">
+   <main>			
+       <div class="application-form">
+           <h2>Job Application Form with Upload</h2>
+           <div class="application-form-detail">					
+               <form>
+                   <h4>Contact Information</h4>
+                   <div class="form-inline">
+                       <div class="form-group">
+                           <label>First Name *</label>
+                           <input type="text" id="fname" name="fname" required>
+                       </div>
+                       <div class="form-group">
+                           <label>Last Name *</label>
+                           <input type="text" id="lname" name="lname" required>
+                       </div>
+                   </div>
+                   <div class="form-group">
+                       <label>Email *</label>
+                       <input type="email" id="email" name="email" required>
+                   </div>
+                   <div class="form-group">
+                       <label>Phone *</label>
+                       <input type="tel" id="tel" name="tel" minlength="11" maxlength="11" required>
+                   </div>
+                   <br>
+                   <h4>Position</h4>
+                   <hr>
+                   <div class="form-group">
+                       <label>Position you are applying for *</label>
+                       <input type="text" id="position" name="position" required>
+                   </div>
+                   <div class="form-group">
+                       <label>Resume Upload</label>
+                       <input type="file" id="resume" name="resume">
+                   </div>
+                   <div class="form-group">
+                       <label>Portfolio Website</label>
+                       <input type="url" id="website" name="website">
+                   </div>
+                   <div class="form-group">
+                       <label>Salary Requirements</label>
+                       <input type="text" id="salary" name="salary">
+                   </div>
+                   <div class="form-group">
+                       <label>When can you start?</label>
+                       <input type="text" id="joining" name="joining">
+                   </div>
+                   <br>
+                   <div class="form-group">
+                       <label>Are you willing to relocate?</label>
+                       <br>
+                       <div class="form-inline flex">
+                           <input type="radio" id="relocation" name="relocation">
+                           <label>Yes</label>
+                       </div>
+                       <div class="form-inline flex">
+                           <input type="radio" id="relocation" name="relocation">
+                           <label>No</label>
+                       </div>
+                       <div class="form-inline flex">
+                           <input type="radio" id="relocation" name="relocation">
+                           <label>Not Sure</label>
+                       </div>
+                   </div>
+                   <br>
+                   <div class="form-group">
+                       <label>Last company you worked for?</label>
+                       <input type="text" id="last-employer" name="last-employer" autocomplete="off">
+                   </div>
+                   <div class="form-group">
+                       <label>Comments</label>
+                       <textarea id="address" name="address" rows="5"></textarea>
+                   </div>
+                   <hr><br>
+                   <button type="submit">Submit</button>
+               </form>				
+           </div>
+       </div>		
+   </main> <!-- Main Area -->
+</div>
+
+</body>
