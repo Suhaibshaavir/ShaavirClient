@@ -1,1 +1,73 @@
-<p>register works!</p>
+
+<body>
+  
+<form>
+  <div class="container">
+    <div>
+    <h1>
+      <i class="fa fa-user-circle text-black" ></i>
+      Register</h1>
+    <p class="sectionText">It only takes a couple of minutes to start.</p>
+    <div class="textCenter">
+      <span class="itsfree">it's free!</span>
+    </div>
+    <div class="socialLogin">
+      <div class="linkedinTab socialLoginTab">
+        <img src="/ShaavirClient/src/app/register/Icons/images.png">
+      </div>
+
+    </div>
+  </div>
+    <label for="username"><b>Full Name</b></label>
+    <input
+      type="text"
+      placeholder="Enter your full name"
+      name="username"
+      id="username"
+      required
+    />
+
+    <label for="Email ID"><b>Email</b></label>
+    <input
+      type="text"
+      placeholder="Enter Email ID"
+      name="email"
+      id="email"
+      required
+    />
+
+    <label><b>Resume Upload</b></label>
+      <input type="file" id="resume" name="resume">
+
+
+    <label><b>Mobile No.</b></label>
+      <input id="mobileNumber" type="text" placeholder="Enter Your Mobile Number"
+       autocomplete="nope" maxlength="13" class="formField error" fdprocessedid="6ntkqu">
+
+    <label for="pwd"><b>Choose Password</b></label>
+    <input
+      type="password"
+      placeholder="Enter Password"
+      name="pwd"
+      id="pwd"
+      required
+    />
+      
+    <label for="pwd-repeat"><b>Repeat Password</b></label>
+    <input
+      type="password"
+      placeholder="Repeat Password"
+      name="pwd-repeat"
+      id="pwd-repeat"
+      required
+    />
+    
+        <button type="submit" (click)="handleRegister()">Register</button>
+      </div>
+    
+      <div>
+        <p>Already have an account? <a routerLink="/login">Log in</a>.</p>
+      </div>
+
+      </form>
+</body>
