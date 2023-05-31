@@ -57,21 +57,16 @@
        autocomplete="nope" maxlength="13" class="formField error" fdprocessedid="6ntkqu">
 
     <label for="pwd"><b>Choose Password</b></label>
-    <input
-      type="password"
-      placeholder="Enter Password"
-      name="pwd"
-      id="pwd"
-      required
-    />  
-    <label for="pwd-repeat"><b>Repeat Password</b></label>
-    <input
-      type="password"
-      placeholder="Repeat Password"
-      name="pwd-repeat"
-      id="pwd-repeat"
-      required
-    />
+      <div class="password-container">
+        <input type="password" placeholder="Enter Password" id="password">
+        <i class="fa-solid fa-eye" id="eye"></i>
+      </div>
+
+      <label for="pwd"><b>Repeat Password</b></label>
+      <div class="password-container">
+        <input type="password" placeholder="Enter Password" id="password">
+        <i class="fa-solid fa-eye" id="eye"></i>
+      </div>
 
     <div class="fieldGroup">
       <label class="formLabel">

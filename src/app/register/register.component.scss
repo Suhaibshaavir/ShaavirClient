@@ -128,3 +128,13 @@ input[type='file'] {
   border: 3px solid #2F96EF;  
   border-radius: 5px;  
 } 
+.password-container{
+  position: relative;
+}
+.fa-eye{
+  position: absolute;
+  top: 40%;
+  right: 4%;
+  cursor: pointer;
+  color: gray;
+}
