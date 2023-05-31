@@ -14,17 +14,17 @@
     <div class="socialLogin">
       <div class="linkedinTab socialLoginTab">
         <a href="https://in.linkedin.com/">
-        <i class="fab fa-linkedin text-black fs-2"></i>
+        <i class="fab fa-linkedin text-black fs-3"></i>
       </a>
       </div>
       <div class="googleTab socialLoginTab">
         <a href="https://mail.google.com/">
-        <i class="fab fa-google fa-spin text-success fs-2"></i>
+        <i class="fab fa-google fa-spin text-success fs-3"></i>
       </a>
       </div>
       <div class="fbTab socialLoginTab">
         <a href="https://www.facebook.com/">
-        <i class="fab fa-facebook fs-2"></i>
+        <i class="fab fa-facebook fs-3"></i>
       </a>
       </div>
 
@@ -63,8 +63,7 @@
       name="pwd"
       id="pwd"
       required
-    />
-      
+    />  
     <label for="pwd-repeat"><b>Repeat Password</b></label>
     <input
       type="password"
@@ -73,6 +72,7 @@
       id="pwd-repeat"
       required
     />
+
     <div class="fieldGroup">
       <label class="formLabel">
      <b> Gender</b> <span class="required">*</span>
@@ -80,18 +80,18 @@
     <div class="genderBox">
       <div class="choiceGroupContainer">
         <label class="radioChoice">
-          <input id="option-0" type="radio" class="radioBoxField" value="Male" style="width: 16px;">
+          <input id="option-0" type="radio" name="radioChoice" class="radioBoxField" value="Male" style="width: 16px ;">
            Male
         </label>
        <label class="radioChoice">
-         <input id="option-1" type="radio" class="radioBoxField" value="Female" style="width: 16px;">
+         <input  id="option-1" type="radio" name="radioChoice" class="radioBoxField" value="Female" style="width: 16px; margin-left:10px">
           Female
        </label>
        <label class="radioChoice">
-         <input id="option-2" type="radio" class="radioBoxField" value="Prefer not to say" style="width: 16px;">
+         <input id="option-2" type="radio" name="radioChoice" class="radioBoxField" value="Prefer not to say" style="width: 16px; margin-left:10px">
          Prefer not to say
        </label> <!----></div></div> <!----></div>
-    
+
         <button type="submit" (click)="handleRegister()">Register</button>
       </div>
     
