@@ -5,7 +5,7 @@ import { FooterComponent } from '../footer/footer.component';
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
-  
+
 })
 export class RegisterComponent {
 show:boolean=true
@@ -19,5 +19,6 @@ handleRegister(){
 passwordToggle() {
   this.show = !this.show;
 }
+
 }
 
