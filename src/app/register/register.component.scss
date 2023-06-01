@@ -1,45 +1,30 @@
 
-h1, p{
-  text-align:start;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-}
-h1, p {
-  text-align: center;
-}
+// input {
+//   margin: 0.25em 0em 1em 0em;
+// }
+// input {
+//   margin: 0.25em 0em 1em 0em;
+//   outline: none;
+//   padding: 0.5em;
+//   border: none;
+//   background-color: rgb(225, 225, 225);
+//   border-radius: 0.25em;
+//   color: black;
+// }
+// button {
+//   padding: 0.75em;
+//   border: none;
+//   outline: none;
+//   background-color: rgb(68, 18, 232);
+//   color: white;
+//   border-radius: 0.25em;
+// }
 
-input {
-  margin: 0.25em 0em 1em 0em;
-}
-input {
-  margin: 0.25em 0em 1em 0em;
-  outline: none;
-  padding: 0.5em;
-  border: none;
-  background-color: rgb(225, 225, 225);
-  border-radius: 0.25em;
-  color: black;
-}
-button {
-  padding: 0.75em;
-  border: none;
-  outline: none;
-  background-color: rgb(68, 18, 232);
-  color: white;
-  border-radius: 0.25em;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: rgb(41, 4, 164);
-}
+// button:hover {
+//   cursor: pointer;
+//   background-color: rgb(41, 4, 164);
+// }
 .icon{
   align-items: center;
 }
@@ -83,48 +68,36 @@ lable {
   text-transform: uppercase;  
   color: #aaa;  
 }  
-input[type='password']:focus {  
-  outline: none;  
-   -moz-outline: none;  
-   -webkit-outline: none;  
-}  
-input[type='password'] {  
-  width: 100%;  
-  box-sizing: border-box;  
-  height: 55px;  
-  display: inline-block;  
-  border: 3px solid #2F96EF;  
-  border-radius: 5px;  
-  padding: 0 15px;  
-  margin: 10px 0;  
-  transition: .2s;  
-}  
-input[type='text'] {  
-  width: 100%;  
-  box-sizing: border-box;  
-  height: 55px;  
-  display: inline-block;  
-  border: 3px solid #2F96EF;  
-  border-radius: 5px;  
-  padding: 0 15px;  
-  margin: 10px 0;  
-  transition: .2s;  
-} 
-input[type='file'] {  
-  width: 100%;  
-  box-sizing: border-box;  
-  height: 55px;  
-  display: inline-block;  
-  border: 3px solid #2F96EF;  
-  border-radius: 5px;  
-} 
-.password-container{
-  position: relative;
-}
-.fa-eye{
-  position: absolute;
-  top: 40%;
-  right: 4%;
-  cursor: pointer;
-  color: gray;
-}
+// input[type='password']:focus {  
+//   outline: none;  
+//    -moz-outline: none;  
+//    -webkit-outline: none;  
+// }  
+// input[type='password'] {  
+//   width: 100%;  
+//   box-sizing: border-box;  
+//   height: 55px;  
+//   display: inline-block;  
+//   border: 3px solid #2F96EF;  
+//   border-radius: 5px;  
+//   padding: 0 15px;  
+//   margin: 10px 0;  
+//   transition: .2s;  
+// }  
+// input[type='text'] {  
+//   width: 100%;  
+//   box-sizing: border-box;  
+//   height: 55px;  
+//   display: inline-block;  
+//   border: 3px solid #2F96EF;  
+//   border-radius: 5px;  
+//   padding: 0 15px;  
+//   margin: 10px 0;  
+//   transition: .2s;  
+// } 
+// input[type='file'] {  
+//   box-sizing: border-box;  
+//   height: 55px;
+//   border: 3px solid #2F96EF;  
+//   border-radius: 5px;  
+// } 
