@@ -8,11 +8,17 @@ import { FooterComponent } from '../footer/footer.component';
 
 })
 export class RegisterComponent {
-  show: boolean = true
-  name: string = ""
-  label: string = "Register"
-  username: string = ""
-  handleRegister() {
-    console.log(this.username)
-  }
+show:boolean=true
+name:string=""
+label:string="Register"
+username:string=""
+handleRegister(){
+  console.log(this.username)
 }
+
+passwordToggle() {
+  this.show = !this.show;
+}
+
+}
+
