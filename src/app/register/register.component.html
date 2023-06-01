@@ -19,7 +19,7 @@
       </div>
       <div class="googleTab socialLoginTab">
         <a href="https://mail.google.com/">
-        <i class="fab fa-google fa-spin text-success fs-3"></i>
+        <i class="fab fa-google text-success fs-3"></i>
       </a>
       </div>
       <div class="fbTab socialLoginTab">
@@ -58,14 +58,14 @@
 
     <label for="pwd"><b>Choose Password</b></label>
       <div class="password-container">
-        <input type="password" placeholder="Enter Password" id="password ">
-        <i   class="fa-solid fa-eye" id="eye" (click)="passwordToggle()"></i>
+        <input [type]="show ? 'text':'password' " placeholder="Enter Password" id="password ">
+        <i  class="fa-solid fa-eye" id="eye" (click)="show = !show"></i>
       </div>
 
       <label for="pwd"><b>Repeat Password</b></label>
-      <div class="password-container">
-        <input type="password" placeholder="Repeat Password" id="password">
-        <i class="fa-solid fa-eye" id="eye" (click)="passwordToggle()"></i>
+      <div [class]="'password-container'">
+        <input [type]="show1 ? 'text':'password' " placeholder="Repeat Password" id="password">
+        <i class="fa-solid fa-eye" id="eye" (click)="show1 = !show1"></i>
       </div>
 
     <div class="fieldGroup">

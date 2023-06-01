@@ -8,7 +8,8 @@ import { FooterComponent } from '../footer/footer.component';
 
 })
 export class RegisterComponent {
-show:boolean=true
+show:boolean=false;
+show1:boolean=false
 name:string=""
 label:string="Register"
 username:string=""
