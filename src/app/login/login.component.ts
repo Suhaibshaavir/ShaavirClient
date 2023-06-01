@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Injectable, OnInit, inject } from '@angular/core';
+import { ExternalService } from '../services/external.service';
 
 @Component({
   selector: 'login',
@@ -6,13 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-
-  arrayData:Array<string> =['Aqib','Suhaib','Athar','Salma','Ayaan','Bisma','Rais']
-  name = 0
-  value=1
-  
-  handleClick() {
-    this.name = this.name + 1
-  }
 
 }
