@@ -9,7 +9,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: 30vw;
 }
 h1, p {
   text-align: center;
@@ -56,4 +56,75 @@ button:hover {
   text-align: center;
   outline-color: rgb(43, 166, 130);
  
+}
+.linkedinTab{
+  display: inline-block;
+  margin-right: 20px;
+
+}
+.googleTab{
+  display: inline-block;
+  margin-right: 20px;
+}
+.fbTab{
+  display: inline-block;
+}
+.socialLogin{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.socialLogin:hover{
+  cursor: pointer;
+}
+lable {  
+  display: block;  
+  position: relative;  
+  text-transform: uppercase;  
+  color: #aaa;  
+}  
+input[type='password']:focus {  
+  outline: none;  
+   -moz-outline: none;  
+   -webkit-outline: none;  
+}  
+input[type='password'] {  
+  width: 100%;  
+  box-sizing: border-box;  
+  height: 55px;  
+  display: inline-block;  
+  border: 3px solid #2F96EF;  
+  border-radius: 5px;  
+  padding: 0 15px;  
+  margin: 10px 0;  
+  transition: .2s;  
+}  
+input[type='text'] {  
+  width: 100%;  
+  box-sizing: border-box;  
+  height: 55px;  
+  display: inline-block;  
+  border: 3px solid #2F96EF;  
+  border-radius: 5px;  
+  padding: 0 15px;  
+  margin: 10px 0;  
+  transition: .2s;  
+} 
+input[type='file'] {  
+  width: 100%;  
+  box-sizing: border-box;  
+  height: 55px;  
+  display: inline-block;  
+  border: 3px solid #2F96EF;  
+  border-radius: 5px;  
+} 
+.password-container{
+  position: relative;
+}
+.fa-eye{
+  position: absolute;
+  top: 40%;
+  right: 4%;
+  cursor: pointer;
+  color: gray;
 }
