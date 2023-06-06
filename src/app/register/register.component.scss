@@ -30,22 +30,20 @@
 }
 .textCenter{
   background-color: rgb(234, 246, 242);
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px ;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
+  border-bottom-left-radius: 42px;
+  border-bottom-right-radius: 42px ;
+  border-top-left-radius: 42px;
+  border-top-right-radius: 42px;
   color: rgb(43, 166, 130);
-  box-sizing: border-box;
-  display: block;
-  font-family: poppins-regular-webfont;
   text-align: center;
+  box-sizing: border-box;
+  font-family: poppins-regular-webfont;
   outline-color: rgb(43, 166, 130);
  
 }
 .linkedinTab{
   display: inline-block;
   margin-right: 20px;
-
 }
 .googleTab{
   display: inline-block;
@@ -63,11 +61,14 @@
   cursor: pointer;
 }
 lable {  
-  display: block;  
-  position: relative;  
-  text-transform: uppercase;  
-  color: #aaa;  
+ display: block;  
+ position: relative;  
+ text-transform: uppercase;  
+  color: #aaa;
 }  
+.fa-eye{
+  cursor: pointer;
+}
 // input[type='password']:focus {  
 //   outline: none;  
 //    -moz-outline: none;  
